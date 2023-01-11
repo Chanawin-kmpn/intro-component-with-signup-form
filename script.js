@@ -2,7 +2,11 @@ let errfirstname = document.getElementById("errorFirstName")
 let errlastname = document.getElementById("errorLastName")
 let erremail = document.getElementById("errorEmail")
 let errpassword = document.getElementById("errorPassword")
-function submitClaim() {
+
+document.getElementById("submit-btn").addEventListener("submit", submitClaim);
+
+function submitClaim(event) {
+    event.preventDefault();
     const input = document.querySelectorAll("input")
     input.forEach(e => {
         let dataInput = e.getAttribute("data-input")
@@ -19,7 +23,8 @@ function submitClaim() {
             if (dataInput == "Password") {
                 errpassword.innerText = `${dataInput} is empty`
             }
-        } else {
+        }
+        else {
             if (dataInput == "First Name") {
                 errfirstname.innerText = ``
             }

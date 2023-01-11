@@ -79,7 +79,6 @@ body {
 }
 
 .error {
-    position: relative;
     font-size: 12px;
     color: hsl(0, 100%, 74%);
 }
