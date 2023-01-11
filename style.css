@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.slogan {
+    width: 520px;
+    margin: auto 32px;
+    color: #fff;
+}
+
+.slogan .title {
+    width: 450px;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.slogan .description {
+    font-size: 16px;
+    margin-top: 32px;
+
+}
+
+.login-part {
+    width: 520px;
+    margin: auto 32px;
+}
+
+.trial {
+    color: #fff;
+    width: 100%;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 10px hsla(249, 10%, 26%, .3);
+}
+
+.trial .bold {
+    font-weight: bold;
+}
+
+.login-form {
+    height: 500px;
+    width: 100%;
+    margin-top: 24px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px hsla(249, 10%, 26%, .3);
+
+}
+
+.user-form {
+    width: 100%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-form input {
+    width: 90%;
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border-color: hsla(249, 10%, 26%, .3);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.user-form input:focus {
+    border-color: hsl(249, 10%, 26%);
+}
+
+a.claim-btn {
+    color: #fff;
+    width: 90%;
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.des-con {
+    color: hsl(246, 25%, 77%);
+    font-size: 12px;
+}
+
+.des-con .highlight {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.attribution {
+    font-size: 16px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    .login-part {
+        width: 100%;
+    }
+
+    .slogan {
+        width: 85%;
+        margin: 48px;
+        text-align: center;
+    }
+
+    .slogan .title {
+        width: 100%;
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .slogan .description {
+        font-size: 16px;
+    }
+
+    .trial {
+        width: 85%;
+        margin: 0 auto;
+        padding: 16px 70px;
+    }
+
+    .login-form {
+        width: 85%;
+        margin: 20px auto;
+    }
+
+    .des-con {
+        width: 85%;
+        text-align: center;
+    }
+}
