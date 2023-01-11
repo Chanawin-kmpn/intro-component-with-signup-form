@@ -19,24 +19,22 @@ function submitClaim() {
             if (dataInput == "Password") {
                 errpassword.innerText = `${dataInput} is empty`
             }
-
-        }
-        else {
-            if(dataInput == "First Name") {
+        } else {
+            if (dataInput == "First Name") {
                 errfirstname.innerText = ``
             }
-            if(dataInput == "Last Name") {
+            if (dataInput == "Last Name") {
                 errlastname.innerText = ``
             }
-            if(dataInput == "Email") {
-                const emailRegEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                if(emailRegEx.test(e.value)){
+            if (dataInput == "Email") {
+                const emailCheck = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if (emailCheck.test(e.value)) {
                     erremail.innerText = ``;
                 } else {
                     erremail.innerText = `Email is not valid.`;
                 }
             }
-            if(dataInput == "Password") {
+            if (dataInput == "Password") {
                 errpassword.innerText = ``
             }
         }
