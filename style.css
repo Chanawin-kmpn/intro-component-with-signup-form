@@ -142,29 +142,29 @@ a.claim-btn {
 
     .slogan {
         width: 85%;
-        margin: 48px;
+        margin: 3rem;
         text-align: center;
     }
 
     .slogan .title {
         width: 100%;
-        font-size: 32px;
-        line-height: 42px;
+        font-size: 2rem;
+        line-height: 2.63rem;
     }
 
     .slogan .description {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .trial {
         width: 85%;
         margin: 0 auto;
-        padding: 16px 70px;
+        padding: 1rem 4.38rem;
     }
 
     .login-form {
         width: 85%;
-        margin: 20px auto;
+        margin: 1.25rem auto;
     }
 
     .des-con {
