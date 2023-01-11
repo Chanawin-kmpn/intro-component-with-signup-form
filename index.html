@@ -29,11 +29,15 @@
       </div>
       <div class="login-form">
         <form class="user-form">
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
-          <input type="email" placeholder="Email Address">
-          <input type="password" placeholder="Password">
-          <a class="claim-btn" href="#">Claim your free trial</a>
+          <input id="inputField" type="text" placeholder="First Name" data-input="First Name">
+          <p id="errorFirstName" class="error"></p>
+          <input id="inputField" type="text" placeholder="Last Name" data-input="Last Name">
+          <p id="errorLastName" class="error"></p>
+          <input id="inputField" type="email" placeholder="Email Address" data-input="Email">
+          <p id="errorEmail" class="error"></p>
+          <input id="inputField" type="password" placeholder="Password" data-input="Password">
+          <p id="errorPassword" class="error"></p>
+          <button class="claim-btn" onclick="submitClaim()">Claim your free trial</button>
           <p class="des-con">By clicking the button, you are agreeing to our <a href="#" class="highlight">Terms and
               Services</a></p>
         </form>
@@ -47,6 +51,7 @@
     </p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
