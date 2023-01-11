@@ -66,7 +66,6 @@ body {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 10px hsla(249, 10%, 26%, .3);
-
 }
 
 .user-form {
@@ -78,9 +77,13 @@ body {
     align-items: center;
 }
 
-.error {
+
+.errorMessege {
     font-size: 12px;
     color: hsl(0, 100%, 74%);
+    font-style: italic;
+    align-self: flex-end;
+    margin-right: 32px;
 }
 
 .user-form input {
@@ -111,6 +114,15 @@ button.claim-btn {
     font-weight: bold;
 }
 
+button.claim-btn:hover {
+    box-shadow: 0px 5px hsl(154, 59%, 27%);
+}
+
+button.claim-btn:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px hsl(154, 59%, 27%);
+}
+
 .des-con {
     color: hsl(246, 25%, 77%);
     font-size: 12px;
@@ -130,8 +142,6 @@ button.claim-btn {
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
-
 
 @media (max-width: 375px) {
     body {
